@@ -1,11 +1,11 @@
 {
-  "name": "my-phones",
+  "name": "contacts_ts",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node api/server.js",
-    "build": "cd app && npm install && npm run build"
+    "build": "cd app && npm install && npm i -g @vue/cli-service-global && npm run build"
   },
   "engines": {
     "node": "14.17.6"
