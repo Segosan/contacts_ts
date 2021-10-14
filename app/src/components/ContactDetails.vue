@@ -46,11 +46,11 @@
 
     </form>
 
-    <button class="badge badge-danger mr-2" @click="deleteContact">
+    <button type="button" class="btn btn-danger btn-lg btn-block" @click="deleteContact">
       Delete
     </button>
 
-    <button type="submit" class="badge badge-success" @click="updateContact">
+    <button type="button" class="btn btn-primary btn-lg btn-block" @click="updateContact">
       Update
     </button>
     <p>{{ message }}</p>

@@ -55,12 +55,12 @@
 
       
 
-      <button @click="saveContact" class="btn btn-success">Submit</button>
+      <button @click="saveContact" class="btn btn-success btn-lg btn-block">Submit</button>
     </div>
 
     <div v-else>
       <h4>You submitted successfully!</h4>
-      <button class="btn btn-success" @click="newContact">Add</button>
+      <button class="btn btn-success btn-lg btn-block" @click="newContact">Add</button>
     </div>
   </div>
 </template>

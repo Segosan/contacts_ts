@@ -33,9 +33,7 @@
           <label><strong>Country:</strong></label>
           {{ currentContact.country }}
         </div>
-        <button class="badge badge-warning mr-2" @click="goToEdit(currentContact._id)">
-      Edit
-    </button>
+        <button type="button" class="btn btn-primary btn-lg btn-block" @click="goToEdit(currentContact._id)">Edit</button>
         
 
       </div>

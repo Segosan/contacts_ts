@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node api/server.js",
-    "build": "cd app && npm install && npm i -g @vue/cli-service-global && npm run build"
+    "build": "cd app && npm install && npm i -g @vue/cli-service-global && npm run build",
+    "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src"
   },
   "engines": {
     "node": "14.17.6"
