@@ -62,7 +62,7 @@ export default class ContactsList extends Vue {
 
   retrieveContacts() {
     ContactDataService.getAll()
-      .then((response) => {
+      .then((response: any) => {
         this.contacts = response.data;
         console.log("all the contacts");
         console.log(response.data);
@@ -83,7 +83,7 @@ export default class ContactsList extends Vue {
     this.currentIndex = index;
   }
 
-  goToEdit(id){
+  goToEdit(id: any){
     this.$router.push("/contacts/" + id);
   }
 

@@ -79,7 +79,7 @@ export default class ContactDetails extends Vue {
   getContact(id: string) {
      console.log(id);
     ContactDataService.get(id)
-      .then((response) => {
+      .then((response: any) => {
         this.currentContact = response.data;
         console.log(response.data);
       })
@@ -90,7 +90,7 @@ export default class ContactDetails extends Vue {
 
   updateContact() {
     ContactDataService.update(this.currentContact._id, this.currentContact)
-      .then((response) => {
+      .then((response: any) => {
         console.log(response.data);
         this.message = "The Contact was updated successfully!";
       })
@@ -101,7 +101,7 @@ export default class ContactDetails extends Vue {
 
   deleteContact() {
     ContactDataService.delete(this.currentContact._id)
-      .then((response) => {
+      .then((response: any) => {
         console.log(response.data);
         this.$router.push("/contacts");
       })
